@@ -18,7 +18,6 @@ echo "Your Admin login password is below: "
 
 cat cd /var/lib/jenkins/secrets/initialAdminPassword
 
-#sandip/Sandip@2020
 
 ####### Uninstall Jenkins 
 
@@ -52,3 +51,5 @@ rpm -qa | grep jdk
 sudo yum remove jdk1.7.0  # use this 
 or  
 rpm -e jdk1.7.0 
+
+
