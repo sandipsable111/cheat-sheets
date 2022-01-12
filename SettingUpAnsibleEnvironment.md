@@ -81,7 +81,7 @@ After completing all the setup execute following ansible command to test the con
 ############## On Windows Machine:
 ##Some useful PS commands: 
 
-Get-ChildItem -Path 'Cert:\LocalMachine\Root' | Where-Object {$_.Subject -Match "^CN=lzf1pvap1094.1dc.com*"}
+Get-ChildItem -Path 'Cert:\LocalMachine\Root' | Where-Object {$_.Subject -Match "^CN=localhost.domain.com*"}
 
 winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 winrm enumerate winrm/config/Listener
